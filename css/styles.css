@@ -56,6 +56,11 @@ p {
 	border-top: 1px solid black;
 }
 
+.buscador2 {
+	display: none;
+	position: absolute;
+}
+
 .activo {
 	background-color: #00FDAD;
 }
@@ -65,10 +70,6 @@ p {
 	right: 0;
 	top: 0;
 }
-
-/* .buscadorinput {
-	max-width: 100px; 
-} */
 
 .nav > div {
 	flex: 1;
@@ -188,8 +189,13 @@ footer small {
 	background-color: #0072E3;
 }
 
+.nav2 {
+	display: flex;
+	justify-content: center;
+}
 .nav2 ul {
 	display: flex;
+	flex: 1;
 	justify-content: center;
 	height: 22px;
 	column-gap: 20px;
@@ -201,7 +207,7 @@ footer small {
 	text-align: center;
 }
 
-#playas { 
+#playas {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 30px;
@@ -210,7 +216,7 @@ footer small {
 	margin-bottom: 70px;
 }
 
-#montañas { 
+#montañas {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 30px;
@@ -219,7 +225,7 @@ footer small {
 	margin-bottom: 70px;
 }
 
-#grandesciudades { 
+#grandesciudades {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 30px;
@@ -228,7 +234,7 @@ footer small {
 	margin-bottom: 70px;
 }
 
-#escapesromanticos { 
+#escapesromanticos {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 30px;
@@ -237,7 +243,7 @@ footer small {
 	margin-bottom: 70px;
 }
 
-#pequeñasjoyas { 
+#pequeñasjoyas {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 30px;
@@ -280,11 +286,11 @@ footer small {
 	background-color: #00FDAD;
 	margin-bottom: 100px;
 	margin-top: 50px;
-}	
+}
 
 .contactomain ol {
 	margin: auto;
-	list-style: none;	
+	list-style: none;
 	margin-bottom: 25px;
 }
 
@@ -303,21 +309,23 @@ footer small {
 	margin-top: 180px;
 	text-align: center;
 	margin-bottom: 30px;
-	
+
 }
 
 .rankingimagen {
 	width: 38%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 734px) {
+	
 	html {
-		scroll-padding-top: 189px;
+		scroll-padding-top: 187px;
 	}
 
 	.redes {
 		grid-template-rows: 48px;
 	}
+
 	.redes img{
 		max-width: 48px;
 	}
@@ -325,10 +333,12 @@ footer small {
 	.redes a {
 	height: 48px;
 	}
+
 	.footergrid1 {
 		font-size: 20px;
 		text-align: center;
 	}
+
 	.contactomainnombre,
 .contactomainmail {
 	width: 233px;
@@ -336,19 +346,16 @@ footer small {
 
 	.menu {
 		column-gap: 10px;
+		font-size: 14px;
 	}
 
-	.navdestinos {
-		flex-wrap: wrap;
-	}
-	
 	.nav {
 		flex-wrap: wrap;
+		padding-left: 10px;
 	}
 
 	.buscador {
-		position: static;
-		margin: auto;
+		padding-left: 10px;
 	}
 
 	.buscador input {
@@ -356,7 +363,49 @@ footer small {
 	}
 
 	.nav2 ul {
-		height: 40px;
+		column-gap: 10px;
+		font-size: 14px;
+	}
+
+	.responsive {
+		width: 100%;
+		max-width: 734px;
+		margin: auto;
+	}
+
+	.intro,
+	.destinosmain,
+	.rankingmain,
+	.contactomain,
+	.nosotrosmain {
+		margin-top: 125px;
+	}
+
+	.logo {
+		max-width: 150px;
+	}
+
+	.h1 h1 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	html {
+		scroll-padding-top: 205px;
+	}
+
+	.nav2 {
+		display: flex;
+		height: auto;
+	}
+
+	.nav2 ul {
+		height: auto;
+		flex-wrap: wrap;
+		column-gap: 10px;
+		padding: 0px 0px;
+		font-size: 14px;
 	}
 
 	.responsive {
@@ -369,9 +418,8 @@ footer small {
 	.destinosmain,
 	.rankingmain,
 	.contactomain,
-	.nosotrosmain
-	 {
-		margin-top: 140px;	
+	.nosotrosmain {
+		margin-top: 150px;
 	}
 
 	.logo {
@@ -381,4 +429,26 @@ footer small {
 	.h1 h1 {
 		font-size: 20px;
 	}
-}	
+}
+
+@media (max-width: 540px) {
+
+	.buscador {
+		display:none;
+	}
+
+	.buscador2 {
+		display: flex;
+		position: static;
+		padding-left: 5px;
+	}
+
+	.menu {
+		column-gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	.nav {
+		padding-left: 8px;
+	}
+}
