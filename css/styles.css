@@ -119,11 +119,13 @@ text-align: center;
 }
 
 .destinos p {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+	min-height: 110px;
 }
 
 .ranking p {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+	min-height: 110px;
 }
 
 .botonranking,
@@ -158,6 +160,10 @@ footer small {
 	align-items: center;
 	font-family: "caveat", sans-serif;
 	grid-template-areas: 'q q w e r';
+}
+
+.circle {
+	border-radius: 50%;
 }
 
 .redes a {
@@ -319,7 +325,17 @@ footer small {
 @media (max-width: 734px) {
 
 	html {
-		scroll-padding-top: 187px;
+		scroll-padding-top: 178px;
+	}
+
+	.destinos p {
+		margin-bottom: 10px;
+		min-height: 130px;
+	}
+	
+	.ranking p {
+		margin-bottom: 10px;
+		min-height: 130px;
 	}
 
 	.redes {
@@ -373,53 +389,17 @@ footer small {
 		margin: auto;
 	}
 
+	.indexmain {
+		margin-bottom: 50px;
+	}
+
 	.intro,
 	.destinosmain,
 	.rankingmain,
 	.contactomain,
 	.nosotrosmain {
 		margin-top: 125px;
-	}
-
-	.logo {
-		max-width: 150px;
-	}
-
-	.h1 h1 {
-		font-size: 20px;
-	}
-}
-
-@media (max-width: 480px) {
-	html {
-		scroll-padding-top: 205px;
-	}
-
-	.nav2 {
-		display: flex;
-		height: auto;
-	}
-
-	.nav2 ul {
-		height: auto;
-		flex-wrap: wrap;
-		column-gap: 10px;
-		padding: 0px 0px;
-		font-size: 14px;
-	}
-
-	.responsive {
-		width: 100%;
-		max-width: 480px;
-		margin: auto;
-	}
-
-	.intro,
-	.destinosmain,
-	.rankingmain,
-	.contactomain,
-	.nosotrosmain {
-		margin-top: 150px;
+		margin-bottom: 40px;
 	}
 
 	.logo {
@@ -432,6 +412,16 @@ footer small {
 }
 
 @media (max-width: 540px) {
+
+	.destinos p {
+		margin-bottom: 10px;
+		min-height: 170px;
+	}
+	
+	.ranking p {
+		margin-bottom: 10px;
+		min-height: 170px;
+	}
 
 	.buscador {
 		display:none;
@@ -450,5 +440,78 @@ footer small {
 
 	.nav {
 		padding-left: 8px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	html {
+		scroll-padding-top: 185px;
+	}
+
+	.destinos p {
+		margin-bottom: 10px;
+		min-height: 209px;
+	}
+	
+	.ranking p {
+		margin-bottom: 10px;
+		min-height: 209px;
+	}
+
+	.nav2 {
+		display: flex;
+		height: auto;
+	}
+
+	.nav2 ul {
+		height: auto;
+		flex-wrap: wrap;
+		column-gap: 10px;
+		padding: 0px 0px;
+		font-size: 14px;
+	}
+
+	.responsive {
+		max-width: 480px;
+	}
+
+	.intro,
+	.destinosmain,
+	.rankingmain,
+	.contactomain,
+	.nosotrosmain {
+		margin-top: 135px;
+	}
+
+	.logo {
+		max-width: 150px;
+	}
+
+	.h1 h1 {
+		font-size: 20px;
+	}
+}
+
+.botonranking:hover,
+.botondestinos:hover {
+	animation: sacudir 0.82s;
+}
+
+@keyframes sacudir {
+	10%, 90% {
+	transform: translate(-1px, 0);
+	}
+	
+	20%, 80% {
+	transform: translate(2px, 0);
+	}
+
+	30%, 50%, 70% {
+	transform: translate(-4px, 0);
+	}
+
+	40%, 60% {
+	transform: translate(4px, 0);
 	}
 }
