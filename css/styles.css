@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "lato", sans-serif;
-	background-color: #00FDAD;
+	background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
 	scroll-padding-top: 220px;
 }
 
@@ -16,7 +16,7 @@ p {
 }
 
 .header {
-	background-color: #0CC3FA;
+	background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
 	padding: 0;
 	margin: 0;
 	position: fixed;
@@ -49,7 +49,7 @@ p {
 .nav {
 	position: relative;
 	display: flex;
-	background-color: #0CC3FA;
+	background-color: #07DCD9;
 	margin: 0;
 	padding: 0;
 	border-bottom: 1px solid black;
@@ -62,7 +62,7 @@ p {
 }
 
 .activo {
-	background-color: #00FDAD;
+	background-color: #03EFBF;
 }
 
 .buscador {
@@ -144,7 +144,7 @@ footer {
 	font-family: "roboto", sans-serif;
 	align-items: flex-end;
 	border-top: 1px solid black;
-	background-color: #0CC3FA;
+	background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
 }
 
 footer small {
@@ -186,7 +186,7 @@ footer small {
 }
 
 .formulariocontacto {
-	background-color: #0072E3;
+	background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
 }
 
 .nav2 {
@@ -199,7 +199,7 @@ footer small {
 	justify-content: center;
 	height: 22px;
 	column-gap: 20px;
-	background-color: #00FDAD;
+	background-color: #03EFBF;
 	border-bottom: 1px solid black;
 }
 
@@ -317,7 +317,7 @@ footer small {
 }
 
 @media (max-width: 734px) {
-	
+
 	html {
 		scroll-padding-top: 187px;
 	}
