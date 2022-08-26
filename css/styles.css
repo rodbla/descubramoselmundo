@@ -1,11 +1,4 @@
-html {
-  padding-top: 0;
-  margin: 0;
-  font-family: "lato", sans-serif;
-  background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
-  scroll-padding-top: 220px; }
-
-body {
+html, body {
   padding-top: 0;
   margin: 0;
   font-family: "lato", sans-serif;
@@ -206,12 +199,6 @@ footer {
 
 .rankingimagen {
   width: 38%; }
-
-.botonranking:hover {
-  animation: sacudir 0.82s; }
-
-.botondestinos:hover {
-  animation: sacudir 0.82s; }
 
 .botondestinosboot:hover {
   animation: sacudir 0.82s; }

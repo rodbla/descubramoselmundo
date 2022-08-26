@@ -3,7 +3,7 @@ $colorfinal: #00FDAD;
 $margintopsecciones: 180px;
 $marginbottomsecciones: 40px;
 
-html {
+@mixin reseteo {
 	padding-top: 0;
 	margin: 0;
 	font-family: "lato", sans-serif;
@@ -11,12 +11,8 @@ html {
 	scroll-padding-top: 220px;
 }
 
-body {
-	padding-top: 0;
-	margin: 0;
-	font-family: "lato", sans-serif;
-	background-image: linear-gradient(to left, $colorinicio 0%, $colorfinal 90%);
-	scroll-padding-top: 220px;
+html, body {
+	@include reseteo();
 }
 
 p {
@@ -265,18 +261,6 @@ footer {
 
 .rankingimagen {
 	width: 38%;
-}
-
-.botonranking {
-	&:hover {
-		animation: sacudir 0.82s;
-	}
-}
-
-.botondestinos {
-	&:hover {
-		animation: sacudir 0.82s;
-	}
 }
 
 .botondestinosboot {
