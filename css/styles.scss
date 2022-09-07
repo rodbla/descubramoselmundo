@@ -62,7 +62,8 @@ p {
 	padding: 0;
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
-	>div {
+
+	> div {
 		flex: 1;
 		display: flex;
 		justify-content: center;
@@ -101,12 +102,14 @@ ul {
 }
 
 .carousel {
+
 	.carousel-item {
 		height: 600px;
 	}
 }
 
 .carousel-item {
+
 	img {
 		object-fit: cover;
 		top: 0;
@@ -119,6 +122,7 @@ ul {
 	margin-top: $margintopsecciones;
 	margin-bottom: 50px;
 	text-align: center;
+
 	h2 {
 		color: black;
 		font-weight: 700;
@@ -138,19 +142,21 @@ ul {
 	width: 64%;
 }
 
-.imagenranking {
+.imagenconsejos {
 	margin-bottom: 20px;
 	width: 64%;
 }
 
 .destinos {
+
 	p {
 		margin-bottom: 10px;
 		min-height: 110px;
 	}
 }
 
-.ranking {
+.consejos {
+
 	p {
 		margin-bottom: 10px;
 		min-height: 110px;
@@ -163,6 +169,7 @@ footer {
 	align-items: flex-end;
 	border-top: 1px solid black;
 	background-image: linear-gradient(to left, $colorinicio 0%, $colorfinal 90%);
+	
 	small {
 		flex: 1;
 	}
@@ -175,6 +182,7 @@ footer {
 	align-items: center;
 	font-family: "caveat", sans-serif;
 	grid-template-areas: 'q q w e r';
+	
 	a {
 		height: 64px;
 	}
@@ -203,6 +211,7 @@ footer {
 
 .destinosmain {
 	margin-top: 190px;
+	
 	h2 {
 		text-align: center;
 	}
@@ -218,6 +227,7 @@ footer {
 .nav2 {
 	display: flex;
 	justify-content: center;
+
 	ul {
 		display: flex;
 		flex: 1;
@@ -232,6 +242,7 @@ footer {
 .contactomain {
 	margin-top: $margintopsecciones;
 	text-align: center;
+
 	ol {
 		margin: auto;
 		list-style: none;
@@ -253,19 +264,94 @@ footer {
 	margin-bottom: $marginbottomsecciones;
 }
 
-.rankingmain {
+.consejosmain {
 	margin-top: $margintopsecciones;
 	text-align: center;
 	margin-bottom: $marginbottomsecciones;
 }
 
-.rankingimagen {
-	width: 38%;
+.consejosimagen {
+	width: 90%;
 }
 
 .botondestinosboot {
+
 	&:hover {
 		animation: sacudir 0.82s;
+	}
+}
+
+.text-secondary {
+    color: #3d5d6f;
+}
+
+.h4 {
+	font-size: 1.2rem;
+	color: #333;
+}
+
+.fa, .fas {
+	font-family: 'FontAwesome';
+	font-weight: 400;
+	font-size: 1.2rem;
+	font-style: normal;
+}
+
+.right-0 {
+	right: 0;
+}
+
+.top-0 {
+	top: 0;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+a.text-secondary {
+
+	&:focus {
+		text-decoration: none;
+		color: #22343e;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: #22343e;
+	}
+}
+
+#accordion {
+	.fa-plus {
+		transition: -webkit-transform 0.25s ease-in-out;
+		transition: transform 0.25s ease-in-out;
+		transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+	}
+
+	a[aria-expanded=true] {
+		.fa-plus {
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+	}
+
+	.card {
+		background-color: transparent;
+	}
+}
+
+.imagenfillresponsive {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	
+	.imagenfillresponsive {
+		display: flex;
+	}
+	.imagenremoved {
+		display: none;
 	}
 }
 
@@ -276,13 +362,15 @@ footer {
 	}
 
 	.destinos {
+
 		p {
 			margin-bottom: 10px;
 			min-height: 130px;
 		}
 	}
 
-	.ranking {
+	.consejos {
+
 		p {
 			margin-bottom: 10px;
 			min-height: 130px;
@@ -291,9 +379,11 @@ footer {
 
 	.redes {
 		grid-template-rows: 48px;
+
 		img {
 			max-width: 48px;
 		}
+
 		a {
 			height: 48px;
 		}
@@ -324,12 +414,14 @@ footer {
 
 	.buscador {
 		padding-left: 10px;
+
 		input {
 			max-width: 120px;
 		}
 	}
 
 	.nav2 {
+
 		ul {
 			column-gap: 10px;
 			font-size: 14px;
@@ -356,7 +448,7 @@ footer {
 		margin-bottom: $marginbottomsecciones;
 	}
 
-	.rankingmain {
+	.consejosmain {
 		margin-top: 125px;
 		margin-bottom: $marginbottomsecciones;
 	}
@@ -376,6 +468,7 @@ footer {
 	}
 
 	.h1 {
+		
 		h1 {
 			font-size: 20px;
 		}
@@ -385,13 +478,15 @@ footer {
 @media (max-width: 540px) {
 
     .destinos {
+
 		p {
 			margin-bottom: 10px;
 			min-height: 170px;
 		}
 	}
 
-	.ranking {
+	.consejos {
+
 		p {
 			margin-bottom: 10px;
 			min-height: 170px;
@@ -426,13 +521,15 @@ footer {
 	}
 
 	.destinos {
+
 		p {
 			margin-bottom: 10px;
 			min-height: 209px;
 		}
 	}
 
-	.ranking {
+	.consejos {
+
 		p {
 			margin-bottom: 10px;
 			min-height: 209px;
@@ -442,6 +539,7 @@ footer {
 	.nav2 {
 		display: flex;
 		height: auto;
+
 		ul {
 			height: auto;
 			flex-wrap: wrap;
@@ -463,7 +561,7 @@ footer {
 		margin-top: 145px;
 	}
 
-	.rankingmain {
+	.consejosmain {
 		margin-top: 135px;
 	}
 
@@ -480,11 +578,11 @@ footer {
 	}
 
 	.h1 {
+
 		h1 {
 			font-size: 20px;
 		}
 	}
-
 }
 
 @media (max-width: 332px) {
@@ -495,7 +593,7 @@ footer {
 
     .responsive {
         max-width: 332px; }
-  }
+}
 
 @keyframes sacudir {
 	10%,90% {

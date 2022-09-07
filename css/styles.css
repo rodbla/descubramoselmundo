@@ -103,7 +103,7 @@ ul {
   margin-bottom: 20px;
   width: 64%; }
 
-.imagenranking {
+.imagenconsejos {
   margin-bottom: 20px;
   width: 64%; }
 
@@ -111,7 +111,7 @@ ul {
   margin-bottom: 10px;
   min-height: 110px; }
 
-.ranking p {
+.consejos p {
   margin-bottom: 10px;
   min-height: 110px; }
 
@@ -192,16 +192,67 @@ footer {
   text-align: center;
   margin-bottom: 40px; }
 
-.rankingmain {
+.consejosmain {
   margin-top: 180px;
   text-align: center;
   margin-bottom: 40px; }
 
-.rankingimagen {
-  width: 38%; }
+.consejosimagen {
+  width: 90%; }
 
 .botondestinosboot:hover {
   animation: sacudir 0.82s; }
+
+.text-secondary {
+  color: #3d5d6f; }
+
+.h4 {
+  font-size: 1.2rem;
+  color: #333; }
+
+.fa, .fas {
+  font-family: 'FontAwesome';
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: normal; }
+
+.right-0 {
+  right: 0; }
+
+.top-0 {
+  top: 0; }
+
+.h-100 {
+  height: 100%; }
+
+a.text-secondary:focus {
+  text-decoration: none;
+  color: #22343e; }
+
+a.text-secondary:hover {
+  text-decoration: none;
+  color: #22343e; }
+
+#accordion .fa-plus {
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
+
+#accordion a[aria-expanded=true] .fa-plus {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#accordion .card {
+  background-color: transparent; }
+
+.imagenfillresponsive {
+  display: none; }
+
+@media (max-width: 767px) {
+  .imagenfillresponsive {
+    display: flex; }
+  .imagenremoved {
+    display: none; } }
 
 @media (max-width: 734px) {
   html {
@@ -209,7 +260,7 @@ footer {
   .destinos p {
     margin-bottom: 10px;
     min-height: 130px; }
-  .ranking p {
+  .consejos p {
     margin-bottom: 10px;
     min-height: 130px; }
   .redes {
@@ -250,7 +301,7 @@ footer {
   .destinosmain {
     margin-top: 125px;
     margin-bottom: 40px; }
-  .rankingmain {
+  .consejosmain {
     margin-top: 125px;
     margin-bottom: 40px; }
   .contactomain {
@@ -268,7 +319,7 @@ footer {
   .destinos p {
     margin-bottom: 10px;
     min-height: 170px; }
-  .ranking p {
+  .consejos p {
     margin-bottom: 10px;
     min-height: 170px; }
   .buscador {
@@ -290,7 +341,7 @@ footer {
   .destinos p {
     margin-bottom: 10px;
     min-height: 209px; }
-  .ranking p {
+  .consejos p {
     margin-bottom: 10px;
     min-height: 209px; }
   .nav2 {
@@ -308,7 +359,7 @@ footer {
     margin-top: 135px; }
   .destinosmain {
     margin-top: 145px; }
-  .rankingmain {
+  .consejosmain {
     margin-top: 135px; }
   .contactomain {
     margin-top: 135px; }
