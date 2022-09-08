@@ -139,12 +139,12 @@ ul {
 
 .imagendestinos {
 	margin-bottom: 20px;
-	width: 64%;
+	width: 90%;
 }
 
 .imagenconsejos {
 	margin-bottom: 20px;
-	width: 64%;
+	width: 90%;
 }
 
 .destinos {
@@ -243,6 +243,15 @@ footer {
 	margin-top: $margintopsecciones;
 	text-align: center;
 
+	.formulariodecontacto {
+		margin-top: 50px;
+	}
+	
+	.banner {
+		margin-top: 30px;
+		max-width: 100%;
+	}
+
 	ol {
 		margin: auto;
 		list-style: none;
@@ -250,12 +259,8 @@ footer {
 	}
 }
 
-.contactomainnombre {
-	width: 243px;
-}
-
-.contactomainmail {
-	width: 243px;
+.contactoancho {
+	width: 280px;
 }
 
 .nosotrosmain {
@@ -345,14 +350,23 @@ a.text-secondary {
 	display: none;
 }
 
+@media (min-width: 481px) {
+	.ocultar {display: none;}
+}
+
 @media (max-width: 767px) {
-	
+
 	.imagenfillresponsive {
 		display: flex;
 	}
+
 	.imagenremoved {
 		display: none;
 	}
+
+	.responsive {
+        max-width: 767px; }
+
 }
 
 @media (max-width: 734px) {
@@ -365,7 +379,7 @@ a.text-secondary {
 
 		p {
 			margin-bottom: 10px;
-			min-height: 130px;
+			min-height: 150px;
 		}
 	}
 
@@ -373,7 +387,7 @@ a.text-secondary {
 
 		p {
 			margin-bottom: 10px;
-			min-height: 130px;
+			min-height: 150px;
 		}
 	}
 
@@ -392,14 +406,6 @@ a.text-secondary {
 	.footergrid1 {
 		font-size: 20px;
 		text-align: center;
-	}
-
-	.contactomainnombre {
-		width: 233px;
-	}
-
-	.contactomainmail {
-		width: 233px;
 	}
 
 	.menu {
@@ -455,7 +461,6 @@ a.text-secondary {
 
 	.contactomain {
 		margin-top: 125px;
-		margin-bottom: $marginbottomsecciones;
 	}
 
 	.nosotrosmain {
@@ -475,12 +480,11 @@ a.text-secondary {
 	}
 }
 
-@media (max-width: 540px) {
+@media (max-width: 548px) {
 
     .destinos {
 
 		p {
-			margin-bottom: 10px;
 			min-height: 170px;
 		}
 	}
@@ -488,19 +492,12 @@ a.text-secondary {
 	.consejos {
 
 		p {
-			margin-bottom: 10px;
 			min-height: 170px;
 		}
 	}
 
 	.buscador {
-		display: none;
-	}
-
-	.buscador2 {
-		display: flex;
-		position: static;
-		padding-left: 5px;
+		max-width: 100px;
 	}
 
 	.menu {
@@ -512,6 +509,9 @@ a.text-secondary {
 	.nav {
 		padding-left: 8px;
 	}
+
+	.responsive {
+        max-width: 548px; }
 }
 
 @media (max-width: 480px) {
@@ -523,7 +523,6 @@ a.text-secondary {
 	.destinos {
 
 		p {
-			margin-bottom: 10px;
 			min-height: 209px;
 		}
 	}
@@ -531,9 +530,17 @@ a.text-secondary {
 	.consejos {
 
 		p {
-			margin-bottom: 10px;
 			min-height: 209px;
 		}
+	}
+
+	.buscador {
+		display: none;
+	}
+
+	.buscador2 {
+		display: flex;
+		position: static;
 	}
 
 	.nav2 {
@@ -585,14 +592,28 @@ a.text-secondary {
 	}
 }
 
-@media (max-width: 332px) {
-    
-    .menu {
-        font-size: 13px;
-    }
+@media (max-width: 348px) {
+
+	.buscador2 {
+		padding-left: 10px;
+	}
+
+	.destinos {
+
+		p {
+			min-height: 239px;
+		}
+	}
+
+	.consejos {
+
+		p {
+			min-height: 239px;
+		}
+	}
 
     .responsive {
-        max-width: 332px; }
+        max-width: 348px; }
 }
 
 @keyframes sacudir {

@@ -101,11 +101,11 @@ ul {
 
 .imagendestinos {
   margin-bottom: 20px;
-  width: 64%; }
+  width: 90%; }
 
 .imagenconsejos {
   margin-bottom: 20px;
-  width: 64%; }
+  width: 90%; }
 
 .destinos p {
   margin-bottom: 10px;
@@ -176,16 +176,18 @@ footer {
 .contactomain {
   margin-top: 180px;
   text-align: center; }
+  .contactomain .formulariodecontacto {
+    margin-top: 50px; }
+  .contactomain .banner {
+    margin-top: 30px;
+    max-width: 100%; }
   .contactomain ol {
     margin: auto;
     list-style: none;
     margin-bottom: 25px; }
 
-.contactomainnombre {
-  width: 243px; }
-
-.contactomainmail {
-  width: 243px; }
+.contactoancho {
+  width: 280px; }
 
 .nosotrosmain {
   margin-top: 180px;
@@ -248,21 +250,27 @@ a.text-secondary:hover {
 .imagenfillresponsive {
   display: none; }
 
+@media (min-width: 481px) {
+  .ocultar {
+    display: none; } }
+
 @media (max-width: 767px) {
   .imagenfillresponsive {
     display: flex; }
   .imagenremoved {
-    display: none; } }
+    display: none; }
+  .responsive {
+    max-width: 767px; } }
 
 @media (max-width: 734px) {
   html {
     scroll-padding-top: 178px; }
   .destinos p {
     margin-bottom: 10px;
-    min-height: 130px; }
+    min-height: 150px; }
   .consejos p {
     margin-bottom: 10px;
-    min-height: 130px; }
+    min-height: 150px; }
   .redes {
     grid-template-rows: 48px; }
     .redes img {
@@ -272,10 +280,6 @@ a.text-secondary:hover {
   .footergrid1 {
     font-size: 20px;
     text-align: center; }
-  .contactomainnombre {
-    width: 233px; }
-  .contactomainmail {
-    width: 233px; }
   .menu {
     column-gap: 10px;
     font-size: 14px; }
@@ -305,8 +309,7 @@ a.text-secondary:hover {
     margin-top: 125px;
     margin-bottom: 40px; }
   .contactomain {
-    margin-top: 125px;
-    margin-bottom: 40px; }
+    margin-top: 125px; }
   .nosotrosmain {
     margin-top: 125px;
     margin-bottom: 40px; }
@@ -315,35 +318,34 @@ a.text-secondary:hover {
   .h1 h1 {
     font-size: 20px; } }
 
-@media (max-width: 540px) {
+@media (max-width: 548px) {
   .destinos p {
-    margin-bottom: 10px;
     min-height: 170px; }
   .consejos p {
-    margin-bottom: 10px;
     min-height: 170px; }
   .buscador {
-    display: none; }
-  .buscador2 {
-    display: flex;
-    position: static;
-    padding-left: 5px; }
+    max-width: 100px; }
   .menu {
     column-gap: 8px;
     font-size: 13px;
     flex-wrap: wrap; }
   .nav {
-    padding-left: 8px; } }
+    padding-left: 8px; }
+  .responsive {
+    max-width: 548px; } }
 
 @media (max-width: 480px) {
   html {
     scroll-padding-top: 185px; }
   .destinos p {
-    margin-bottom: 10px;
     min-height: 209px; }
   .consejos p {
-    margin-bottom: 10px;
     min-height: 209px; }
+  .buscador {
+    display: none; }
+  .buscador2 {
+    display: flex;
+    position: static; }
   .nav2 {
     display: flex;
     height: auto; }
@@ -370,11 +372,15 @@ a.text-secondary:hover {
   .h1 h1 {
     font-size: 20px; } }
 
-@media (max-width: 332px) {
-  .menu {
-    font-size: 13px; }
+@media (max-width: 348px) {
+  .buscador2 {
+    padding-left: 10px; }
+  .destinos p {
+    min-height: 239px; }
+  .consejos p {
+    min-height: 239px; }
   .responsive {
-    max-width: 332px; } }
+    max-width: 348px; } }
 
 @keyframes sacudir {
   10%, 90% {
