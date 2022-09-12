@@ -11,7 +11,8 @@ $marginbottomsecciones: 40px;
 	scroll-padding-top: 220px;
 }
 
-html, body {
+html,
+body {
 	@include reseteo();
 }
 
@@ -47,6 +48,7 @@ p {
 .h1 {
 	flex: 1;
 	text-align: center;
+
 	h1 {
 		font-weight: 900;
 		font-family: "caveat", sans-serif;
@@ -63,7 +65,7 @@ p {
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 
-	> div {
+	>div {
 		flex: 1;
 		display: flex;
 		justify-content: center;
@@ -169,7 +171,7 @@ footer {
 	align-items: flex-end;
 	border-top: 1px solid black;
 	background-image: linear-gradient(to left, $colorinicio 0%, $colorfinal 90%);
-	
+
 	small {
 		flex: 1;
 	}
@@ -182,7 +184,7 @@ footer {
 	align-items: center;
 	font-family: "caveat", sans-serif;
 	grid-template-areas: 'q q w e r';
-	
+
 	a {
 		height: 64px;
 	}
@@ -211,7 +213,7 @@ footer {
 
 .destinosmain {
 	margin-top: 190px;
-	
+
 	h2 {
 		text-align: center;
 	}
@@ -246,7 +248,7 @@ footer {
 	.formulariodecontacto {
 		margin-top: 50px;
 	}
-	
+
 	.banner {
 		margin-top: 30px;
 		max-width: 100%;
@@ -287,7 +289,7 @@ footer {
 }
 
 .text-secondary {
-    color: #3d5d6f;
+	color: #3d5d6f;
 }
 
 .h4 {
@@ -295,7 +297,8 @@ footer {
 	color: #333;
 }
 
-.fa, .fas {
+.fa,
+.fas {
 	font-family: 'FontAwesome';
 	font-weight: 400;
 	font-size: 1.2rem;
@@ -328,6 +331,7 @@ a.text-secondary {
 }
 
 #accordion {
+	
 	.fa-plus {
 		transition: -webkit-transform 0.25s ease-in-out;
 		transition: transform 0.25s ease-in-out;
@@ -361,13 +365,14 @@ a.text-secondary {
 	}
 
 	.responsive {
-        max-width: 767px; }
+		max-width: 767px;
+	}
 
 }
 
 @media (max-width: 734px) {
 
-    html {
+	html {
 		scroll-padding-top: 178px;
 	}
 
@@ -469,7 +474,7 @@ a.text-secondary {
 	}
 
 	.h1 {
-		
+
 		h1 {
 			font-size: 20px;
 		}
@@ -478,7 +483,7 @@ a.text-secondary {
 
 @media (max-width: 548px) {
 
-    .destinos {
+	.destinos {
 
 		p {
 			min-height: 170px;
@@ -498,7 +503,7 @@ a.text-secondary {
 
 	.menu {
 		column-gap: 8px;
-        font-size: 13px;
+		font-size: 13px;
 		flex-wrap: wrap;
 	}
 
@@ -507,12 +512,13 @@ a.text-secondary {
 	}
 
 	.responsive {
-        max-width: 548px; }
+		max-width: 548px;
+	}
 }
 
 @media (max-width: 480px) {
 
-    html {
+	html {
 		scroll-padding-top: 185px;
 	}
 
@@ -608,21 +614,31 @@ a.text-secondary {
 		}
 	}
 
-    .responsive {
-        max-width: 348px; }
+	.responsive {
+		max-width: 348px;
+	}
 }
 
 @keyframes sacudir {
-	10%,90% {
+
+	10%,
+	90% {
 		transform: translate(-1px, 0);
 	}
-	20%,80% {
+
+	20%,
+	80% {
 		transform: translate(2px, 0);
 	}
-	30%,50%,70% {
+
+	30%,
+	50%,
+	70% {
 		transform: translate(-4px, 0);
 	}
-	40%,60% {
+
+	40%,
+	60% {
 		transform: translate(4px, 0);
 	}
 }

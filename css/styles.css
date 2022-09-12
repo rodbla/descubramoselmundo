@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   padding-top: 0;
   margin: 0;
   font-family: "lato", sans-serif;
@@ -212,7 +213,8 @@ footer {
   font-size: 1.2rem;
   color: #333; }
 
-.fa, .fas {
+.fa,
+.fas {
   font-family: 'FontAwesome';
   font-weight: 400;
   font-size: 1.2rem;
@@ -379,13 +381,18 @@ a.text-secondary:hover {
     max-width: 348px; } }
 
 @keyframes sacudir {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate(-1px, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate(2px, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate(-4px, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate(4px, 0); } }
 
 /*# sourceMappingURL=styles.css.map */
