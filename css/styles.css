@@ -3,7 +3,7 @@ body {
   padding-top: 0;
   margin: 0;
   font-family: "lato", sans-serif;
-  background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
+  background-image: linear-gradient(to left, #0cc3fa 0%, #00fdad 90%);
   scroll-padding-top: 220px; }
 
 p {
@@ -13,7 +13,7 @@ p {
   box-sizing: border-box; }
 
 .header {
-  background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
+  background-image: linear-gradient(to left, #0cc3fa 0%, #00fdad 90%);
   padding: 0;
   margin: 0;
   position: fixed;
@@ -41,7 +41,7 @@ p {
 .nav {
   position: relative;
   display: flex;
-  background-color: #07DCD9;
+  background-color: #07dcd9;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid black;
@@ -57,7 +57,7 @@ p {
   position: absolute; }
 
 .activo {
-  background-color: #03EFBF; }
+  background-color: #03efbf; }
 
 .buscador {
   position: absolute;
@@ -121,7 +121,7 @@ footer {
   font-family: "roboto", sans-serif;
   align-items: flex-end;
   border-top: 1px solid black;
-  background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%); }
+  background-image: linear-gradient(to left, #0cc3fa 0%, #00fdad 90%); }
   footer small {
     flex: 1; }
 
@@ -131,7 +131,7 @@ footer {
   grid-template-rows: 64px;
   align-items: center;
   font-family: "caveat", sans-serif;
-  grid-template-areas: 'q q w e r'; }
+  grid-template-areas: "q q w e r"; }
   .redes a {
     height: 64px; }
 
@@ -157,8 +157,8 @@ footer {
     text-align: center; }
 
 .formulariocontacto {
-  background-image: linear-gradient(to left, #0CC3FA 0%, #00FDAD 90%);
-  background-color: #00FDAD;
+  background-image: linear-gradient(to left, #0cc3fa 0%, #00fdad 90%);
+  background-color: #00fdad;
   margin-bottom: 100px;
   margin-top: 50px; }
 
@@ -171,7 +171,7 @@ footer {
     justify-content: center;
     height: 22px;
     column-gap: 20px;
-    background-color: #03EFBF;
+    background-color: #03efbf;
     border-bottom: 1px solid black; }
 
 .contactomain {
@@ -215,7 +215,7 @@ footer {
 
 .fa,
 .fas {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-weight: 400;
   font-size: 1.2rem;
   font-style: normal; }
@@ -242,7 +242,7 @@ a.text-secondary:hover {
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
 
-#accordion a[aria-expanded=true] .fa-plus {
+#accordion a[aria-expanded="true"] .fa-plus {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
