@@ -334,7 +334,7 @@ a.text-secondary:hover {
 
 @media (max-width: 480px) {
   html {
-    scroll-padding-top: 185px; }
+    scroll-padding-top: 177px; }
   .destinos p {
     min-height: 209px; }
   .consejos p {
